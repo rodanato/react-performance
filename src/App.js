@@ -5,6 +5,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Box from "./box.component";
 import Button from "@material-ui/core/Button";
+import { css } from 'emotion'
 
 type Props = {};
 
@@ -12,12 +13,16 @@ type State = {
   list: string[]
 };
 
-class App extends Component<Props, State> {
+const purpleColor = css`
+  color: rebeccapurple;
+`
+
+class App extends Component {
   state = {
     list: []
   };
 
-  loadItemstoList(list: string[]) {
+  loadItemstoList(list: boolean[]) {
     let newList = list;
 
     newList.push("uno");
@@ -46,7 +51,7 @@ class App extends Component<Props, State> {
         <div className="list-container">
           {this.state.list.length > 0 &&
             this.state.list.map((item, i) => (
-              <h2 className={"list-item"} key={i}>
+              <h2 className={purpleColor} key={i}>
                 {item}
               </h2>
             ))}
