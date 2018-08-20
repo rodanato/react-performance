@@ -1,11 +1,10 @@
-// @flow
 
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Box from "./box.component";
 import Button from "@material-ui/core/Button";
-import { css } from 'emotion'
+import { css } from 'emotion';
 
 type Props = {};
 
@@ -17,7 +16,7 @@ const purpleColor = css`
   color: rebeccapurple;
 `
 
-class App extends Component {
+class App extends Component<Props, State> {
   state = {
     list: []
   };
