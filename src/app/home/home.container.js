@@ -1,19 +1,15 @@
 // @flow
+import {compose} from "ramda";
+import {connect} from 'react-redux';
 
-import {compose}         from "ramda";
-import {connect}         from 'react-redux';
+import Home from './home.component';
 
-import Home      from './home.component';
-import * as ActionsNames from "../reservations-actions.constants";
+const mapStateToProps = (state) => ({});
 
-const mapStateToProps = (state) => (  {
-});
-
-const mapDispatchToProps = dispatch => ({
-});
+const mapDispatchToProps = dispatch => ({});
 
 
-export default compose(SAVE_RESERVATION_LIST
+export default compose(
   connect(
     mapStateToProps,
     mapDispatchToProps

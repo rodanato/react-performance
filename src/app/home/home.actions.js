@@ -1,6 +1,4 @@
-// @flow
-
-export const getWorldList = (state, action) => ({
+export const getWorldList = (state: any, action: any) => ({
   ...state,
   worldList: action.worldList
 });

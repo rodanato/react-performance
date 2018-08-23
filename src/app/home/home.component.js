@@ -2,12 +2,12 @@
 
 import React from "react";
 
-import { withStyles } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
+import {withStyles}    from "@material-ui/core/styles";
+import GridList        from "@material-ui/core/GridList";
+import GridListTile    from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
-import IconButton from "@material-ui/core/IconButton";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
+import IconButton      from "@material-ui/core/IconButton";
+import StarBorderIcon  from "@material-ui/icons/StarBorder";
 
 const styles = theme => ({
   root: {
@@ -43,7 +43,7 @@ const worldsData = [
 ];
 
 function AdvancedGridList(props) {
-  const { classes } = props;
+  const {classes} = props;
 
   return (
     <div className={classes.root}>
@@ -54,13 +54,13 @@ function AdvancedGridList(props) {
             cols={tile.featured ? 2 : 1}
             rows={tile.featured ? 2 : 1}
           >
-            <img src={tile.img} alt={tile.title} />
+            <img src={tile.img} alt={tile.title}/>
             <GridListTileBar
               title={tile.title}
               titlePosition="top"
               actionIcon={
                 <IconButton className={classes.icon}>
-                  <StarBorderIcon />
+                  <StarBorderIcon/>
                 </IconButton>
               }
               actionPosition="left"
