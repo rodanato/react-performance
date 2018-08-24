@@ -35,8 +35,14 @@ const styles = theme => ({
 
 const worldsData = [
   {
-    img: "",
-    title: "Image",
+    img: "https://auto.ndtvimg.com/car-images/big/maruti-suzuki/baleno/maruti-suzuki-baleno.jpg?v=51",
+    title: "carro azul",
+    author: "author",
+    featured: true
+  },
+  {
+    img: "https://www.advantage.com/wp-content/plugins/advantage-vehicles/assets/SCAR_800x400.png",
+    title: "carro rojo",
     author: "author",
     featured: true
   }
