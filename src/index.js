@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import './index.css';
 import store from './app/store';
 
 import Home from './app/home/home.container';

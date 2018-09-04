@@ -1,3 +1,3 @@
 // @flow
 
-export const WORLDS_GET_LIST = 'worlds/GET_LIST';
+export const WORLDS_APPLY_LIST = 'worlds/APPLY_LIST';

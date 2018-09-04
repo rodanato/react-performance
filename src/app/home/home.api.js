@@ -1,9 +1,8 @@
 // @flow
-
 import {RESTResolve} from "../../shared/utils";
 
 const REST = {
-  worlds: 'worlds'
+  worlds: 'artists'
 };
 
 export const getWorlds = () => {
